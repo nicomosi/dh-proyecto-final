@@ -25,8 +25,8 @@ require_once('header.php');
         <section class="login container">
             <h3>Ingresar</h3>
             <div class="login-extern">
-              <img src="../img/fb-icon.png" alt="Facebook">
-              <img src="../img/go-icon.png" alt="Google">
+              <img src="img/fb-icon.png" alt="Facebook">
+              <img src="img/go-icon.png" alt="Google">
             </div>
 
             <form class="login-form" action="">
