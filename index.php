@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/estilos-juan.css">
     <title>Home</title>
   </head>
-  <?php require_once("header.php");?>
-  <?php require_once("main-home.php");?>
-  <?php require_once("footer.php");?>
+  <?php require_once("_header.php");?>
+  <?php require_once("_main-home.php");?>
+  <?php require_once("_footer.php");?>
 
 
 

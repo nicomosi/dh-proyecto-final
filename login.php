@@ -18,7 +18,7 @@
 
 <?php
 //convoca al header
-require_once('header.php');
+require_once('_header.php');
 
 ?>
 <main>
@@ -45,6 +45,6 @@ require_once('header.php');
 
 <?php
 //convoca al footer
-require_once('footer.php');
+require_once('_footer.php');
 
 ?>
