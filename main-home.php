@@ -19,19 +19,19 @@
     <article class="contenedor-objetivos">
 
       <div class="obj1-home objetivo">
-        <a href=""><img src="../img/muscles.png" alt="Entrenar"></a>
+        <a href=""><img src="img/muscles.png" alt="Entrenar"></a>
         <p>Entrenar</p>
       </div>
       <div class="obj3-home objetivo">
-        <a href=""><img src="../img/waist.png" alt=""></a>
+        <a href=""><img src="img/waist.png" alt=""></a>
         <p>Adelgazar</p>
       </div>
       <div class="obj2-home objetivo">
-        <a href=""><img src="../img/salad.png" alt=""></a>
+        <a href=""><img src="img/salad.png" alt=""></a>
         <p>Viandas Especificas</p>
       </div>
       <div class="obj4-home objetivo">
-        <a href=""><img src="../img/meat.png" alt=""></a>
+        <a href=""><img src="img/meat.png" alt=""></a>
         <p>Viandas Comunes</p>
       </div>
     </article>
