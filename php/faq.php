@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/estilos-nico.css">
     <link rel="stylesheet" href="../css/estilos-francis.css">
     <link rel="stylesheet" href="../css/estilos-juan.css">
-    <title>Home</title>
+    <title>FAQ</title>
   </head>
 
 
