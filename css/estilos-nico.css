@@ -160,10 +160,10 @@ transition: 0.4s;
   .pasos .contenedor-btn-diseñar{
     width: 100%;
   }
- .pasos div a{
+  .pasos .contenedor-btn-diseñar a{
    align-items: center;
    border-radius: 6px;
-   background-color: rgba(246, 175, 44, 0.7);
+   background-color: rgba(93, 217, 217, 0.8);
    box-shadow: 2px 2px 3px rgba(80, 80, 80, 0.61);
    color: white;
    display: flex;
@@ -337,10 +337,10 @@ transition: 0.4s;
 .pasos .contenedor-btn-diseñar{
   width: 100%;
 }
-.pasos div a{
+.pasos .contenedor-btn-diseñar a{
  align-items: center;
  border-radius: 6px;
- background-color: rgba(246, 175, 44, 0.7);
+ background-color: rgba(93, 217, 217, 0.8);
  box-shadow: 2px 2px 3px rgba(80, 80, 80, 0.61);
  color: white;
  display: flex;
