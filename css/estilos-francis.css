@@ -6,9 +6,9 @@
 .container{
   border: solid 1px #ddd;
   box-shadow: 0 0 10px #ddd;
-  background-color: white; 
+  background-color: white;
   padding: 35px 15px;
-  
+
 }
 
 .container h3{
@@ -33,7 +33,9 @@
 }
 
 .form-button {
-  margin-top: 15px;
+
+  margin: 0 auto;
+  margin-top: 30px;
   background: #FF7519;
   color: #FFF;
   border-color: #FF7519;
@@ -41,6 +43,11 @@
   cursor: pointer;
   height: calc(2.25rem + 2px);
   font-size: 1em;
+  width: 280px;
+}
+.form-button:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .container a{
@@ -49,6 +56,11 @@
   color: #888;
   font-style: oblique;
   font-size: 0.95em;;
+}
+
+.login form a:hover{
+  color: rgb(252, 191, 71);
+  transition: 0.15s;
 }
 
 .login-extern{
@@ -68,7 +80,7 @@
 
 */
 .login{
-  float: right;
+  float: left;
   margin: 3% 5%;
   width: 400px;
 }
@@ -78,7 +90,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
-    
+
 }
 
 .back-blur{
@@ -134,7 +146,7 @@
   .login{
       float: none;
       width: auto;
-  }   
+  }
 
   .signin {
       width: auto;
@@ -144,11 +156,11 @@
   .signin-group-form {
       width: 100%;
   }
- 
+
 }
 @media (max-width: 620px){
 .login{
   float: none;
   width: auto;
-} 
+}
 }

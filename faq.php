@@ -8,7 +8,7 @@ require_once('_header.php');
 ?>
 <main>
       <section class="faq">
-          <h1>Preguntas Frecuentes:</h1>
+          <h1>Preguntas Frecuentes</h1>
           <section>
             <article>
               <h3><strong>¿Cuál es el costo de Envio?</strong></h3>

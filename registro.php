@@ -10,8 +10,8 @@ require_once('_header.php');
                 <article class="signin container">
                 <h3>Crea una cuenta</h3>
                 <div class="login-extern">
-                <img src="img/fb-icon.png" alt="Facebook">
-                <img src="img/go-icon.png" alt="Google">
+                  <a href=""><img src="img/fb-icon.png" alt="Facebook"></a>
+                  <a href=""><img src="img/go-icon.png" alt="Google"></a>
                 </div>
                         <form class="signin-form" action="">
 
@@ -40,7 +40,7 @@ require_once('_header.php');
                 </article>
                 <!-- fin <article class="signin container"> -->
         </section>
-</main> 
+</main>
 <!-- fin class="main-registro" -->
 
 <?php

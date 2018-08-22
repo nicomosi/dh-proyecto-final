@@ -20,7 +20,7 @@
         </li>
       </ul>
     </article>
-    <article>
+    <article class="footer-datos-contacto">
       <h3>Objetctive Food</h3>
       <p>Teléfono: +54 911 3934 2713</p>
       <p>Email: ventas@objectivefood.com</p>

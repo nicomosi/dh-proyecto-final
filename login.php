@@ -9,9 +9,9 @@ require_once('_header.php');
   <section class="back-blur">
         <article class="login container">
             <h3>Ingresar</h3>
-            <div class="login-extern">  
-              <img src="img/fb-icon.png" alt="Facebook">
-              <img src="img/go-icon.png" alt="Google">
+            <div class="login-extern">
+              <a href=""><img src="img/fb-icon.png" alt="Facebook"></a>
+              <a href=""><img src="img/go-icon.png" alt="Google"></a>
             </div>
 
             <form class="" action="">
@@ -27,7 +27,7 @@ require_once('_header.php');
         </article>
         <!-- fin article class="login container"  -->
   </section>
-  
+
 </main>
 
 <?php
