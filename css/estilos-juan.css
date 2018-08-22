@@ -1,42 +1,96 @@
-body{
+/*Media Query Celular -MOBILE FIRST-*/
+body{/*ASÍ NOS MOSTRO FRAN PARA BAJAR EL FOOTER SIEMPRE - LA MEJOR MANERA!*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
-
-/*Estilos Footer Celular MOBILE FIRST*/
 footer{
-  background-color: #B46EFF;
   width: 100%;
   position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px 10px 0px;
-  /*ARRERGLAR POSICION DEL FOOTER Y SACAR DISPLAY NONE*/
 }
-footer>p{
+.nav-footer{
+  display: none;
+}
+footer>section{
+  background-color: rgba(59, 58, 58, 0.88);
+  padding: 10px 0px 10px 0px;
+}
+footer>section:nth-child(2){
+  background-color: rgba(59, 58, 58, 0.98);
+  padding: 10px 0px 10px 0px;
+}
+footer>section>article>p{
+  color: white;
   margin: 0;
   text-align: center;
   font-size: 0.8em;
 }
-footer>ul{
-  margin: 0;
+footer>section>article>h3{
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+footer>section>article>ul{
+  padding-top: 5px;
   display: flex;
   justify-content: center;
-}
-footer>ul>li{
-  float: left;
+  }
+.footer-redes>ul>li{
   padding: 0px 3px 0px 3px;
   list-style: none;
 }
-footer>ul>li>a>img{
+.footer-redes>ul>li>a{
+  color: white;
+  display: flex;   
+  align-items: center;
+}
+.footer-redes>ul>li>a>img{
   width: 15px;
 }
 
 
+/*Media Query Ipad's*/
+@media (min-width:480px){
+
+}
+
+/*Media Query Desktop's*/
+@media (min-width:1025px){
+  footer>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer>section>article>p{
+    font-size: 1em;
+  }
+  .nav-footer{
+    display: inline;
+  }
+  .nav-footer>ul>li{
+    list-style: none;
+  }
+  .nav-footer>ul>li>a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+  footer>section>article:nth-child(1)>ul{
+    flex-direction: column;
+  }
+  .footer-redes>ul>li>a>img{
+  width: 25px;
+  }
+
+}
+/*SACAR ESTO DE ABAJO*/
 @media (min-width:750px){
+  
 
   .faq{
     display: flex;
@@ -59,40 +113,5 @@ footer>ul>li>a>img{
   .faq>article>h1{
     font-size: 1.2em;
   }
-
-
-  footer{
-    background-color: rgba(59, 58, 58, 0.88);
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px 10px 0px;
-    /*ARRERGLAR POSICION DEL FOOTER Y SACAR DISPLAY NONE*/
-  }
-  footer>p{
-    color: white;
-    margin: 0;
-    text-align: center;
-    font-size: 0.8em;
-  }
-  footer>ul{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  footer>ul>li{
-    float: left;
-    padding: 0px 3px 0px 3px;
-    list-style: none;
-  }
-  footer>ul>li>a{
-    color: white;
-  }
-  footer>ul>li>a>img{
-    width: 15px;
-  }
-
 
 }
