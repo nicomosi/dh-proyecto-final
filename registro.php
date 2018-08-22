@@ -1,53 +1,47 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="¡ACÁ escribir máximo 160 caracteres!">
-    <meta name="author" content="Nicolas Mosi">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos-nico.css">
-    <link rel="stylesheet" href="css/estilos-francis.css">
-    <link rel="stylesheet" href="css/estilos-juan.css">
-    <title>Registro</title>
+<?php require_once('_head.php'); ?>
+<title>Registro</title>
   </head>
-
-
 <?php
 //convoca al header
 require_once('_header.php');
 ?>
-<main class="main-registro">
-        <section class="signin container">
-            <h3>Crea una cuenta</h3>
-        <form class="signin-form" action="">
+<main class="signin-back">
+        <section class="back-blur">
+                <article class="signin container">
+                <h3>Crea una cuenta</h3>
+                <div class="login-extern">
+                <img src="img/fb-icon.png" alt="Facebook">
+                <img src="img/go-icon.png" alt="Google">
+                </div>
+                        <form class="signin-form" action="">
 
-            <div class="signin-group-form">
-                    <label for="firts-name">Nombre:</label>
-                    <input class="form-input" type="text" name="firts-name" placeholder="" required>
-            </div>
-            <div class="signin-group-form">
-                    <label for="last-name">Apellido:</label>
-                    <input class="form-input" type="text" name="last-name" placeholder="" required>
-            </div>
-            <div class="signin-group-form">
-                    <label for="email">Email:</label>
-                    <input class="form-input" type="email" name="email" placeholder="" required>
-            </div>
-            <div class="signin-group-form">
-                    <label for="password">Contraseña:</label>
-                    <input class="form-input" type="password" name="password" placeholder="" required>
-            </div>
-            <div class="politics">
-            <input type="checkbox" name="politics">
-            <label for="politics">Al crear tu cuenta, estás aceptando los términos de servicio y la política de privacidad de ##.</label>
-            </div>
-            <button class="form-row" type="submit" name="send">Crear cuenta</button>
-        </form>
-    </section>
-    </main>
+                                <div class="signin-group-form">
+                                        <label for="firts-name">Nombre:</label>
+                                        <input class="form-input" type="text" id="firts-name" placeholder="" required>
+                                </div>
+                                <div class="signin-group-form">
+                                        <label for="last-name">Apellido:</label>
+                                        <input class="form-input" type="text" id="last-name" placeholder="" required>
+                                </div>
+                                <div class="signin-group-form">
+                                        <label for="email">Email:</label>
+                                        <input class="form-input" type="email" id="email" placeholder="" required>
+                                </div>
+                                <div class="signin-group-form">
+                                        <label for="password">Contraseña:</label>
+                                        <input class="form-input" type="password" id="password" placeholder="" required>
+                                </div>
+                                <div class="politics">
+                                        <input type="checkbox" id="politics">
+                                        <label for="politics">Al crear tu cuenta, estás aceptando los términos de servicio y la política de privacidad de ##.</label>
+                                </div>
+                                <button class="form-row form-button" type="submit" name="send-signin">Crear cuenta</button>
+                        </form>
+                </article>
+                <!-- fin <article class="signin container"> -->
+        </section>
+</main> 
+<!-- fin class="main-registro" -->
 
 <?php
 //convoca al footer

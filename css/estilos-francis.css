@@ -1,16 +1,14 @@
 /*
 
-//////////// ESTILO PARA EL LOGIN //////////
+//////////// ESTILO PARA LOS FORMS //////////
 
 */
-
-
 .container{
   border: solid 1px #ddd;
   box-shadow: 0 0 10px #ddd;
-  background-color: white;
+  background-color: white; 
   padding: 35px 15px;
-  margin: 5% auto;
+  
 }
 
 .container h3{
@@ -19,23 +17,13 @@
   margin: 0% auto 10%;
 }
 
-.login{
-  float: right;
-  margin: 5%;
-  width: 400px;
-}
-
-.container label{
-  color: #666;
-  font-weight: 700;
-}
 .form-input {
   color: #495057;
   margin: 3% 0% 5%;
   border: 1px solid #ced4da;
   border-radius: .25rem;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
+  height: 3em;
+  padding: .8rem;
 }
 
 .form-row {
@@ -44,8 +32,7 @@
 
 }
 
-
-.container button {
+.form-button {
   margin-top: 15px;
   background: #FF7519;
   color: #FFF;
@@ -53,13 +40,10 @@
   border-radius: 3px;
   cursor: pointer;
   height: calc(2.25rem + 2px);
+  font-size: 1em;
 }
 
-a{
-
-}
-.login-form a{
-
+.container a{
   float: right;
   text-decoration: none;
   color: #888;
@@ -70,28 +54,55 @@ a{
 .login-extern{
   display: flex;
   justify-content: space-evenly;
-  margin: 0px 20% 10%;
+  margin: 0px 20% 5%;
+}
+.container label{
+  /* color: #666; */
+  font-weight: 700;
 }
 
 
+/*
 
+//////////// ESTILO PARA EL LOGIN //////////
+
+*/
+.login{
+  float: right;
+  margin: 3% 5%;
+  width: 400px;
+}
+
+.login-back{
+  background-image: url(../img/registro2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+    
+}
+
+.back-blur{
+  background-image: linear-gradient(180deg,rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.2));
+  width: 100%;
+}
 /*
 
 //////////// ESTILO PARA EL REGISTRO //////////
 
 */
 .main-registro{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items:center;
+  margin: 0 auto;
 }
-form.signin-form {
-  margin-bottom: 0;
+.signin-back{
+  background-image: url(../img/registro2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 
+
 .signin{
-  margin: 5vh 0;
+  margin: 3% auto;
   width: 600px;
 }
 
@@ -105,8 +116,6 @@ form.signin-form {
   /* justify-content: space-between; */
   flex-direction: column;
   width: 48%;
-
-
 }
 
 .politics {
@@ -118,4 +127,28 @@ form.signin-form {
 
 .politics input{
   margin-right: 0.8em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 620px){
+  .login{
+      float: none;
+      width: auto;
+  }   
+
+  .signin {
+      width: auto;
+      margin: 5%;
+  }
+
+  .signin-group-form {
+      width: 100%;
+  }
+ 
+}
+@media (max-width: 620px){
+.login{
+  float: none;
+  width: auto;
+} 
 }

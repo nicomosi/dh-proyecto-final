@@ -71,7 +71,7 @@ transition: 0.4s;
     height: 50px;
   }
   .header-top .contenedor-logo-header{
-    margin: 0 auto;
+    margin: 0 5%;
   }
   .header-top nav{
     display: none;
@@ -85,6 +85,9 @@ transition: 0.4s;
   }
   .header-bottom h1{
     display: none;
+  }
+  .banner{
+    margin: 5%;
   }
 
 
@@ -173,7 +176,8 @@ transition: 0.4s;
    height: 45px;
  }
 
-}
+} 
+/* Fin (max-width:749px) */
 
 
 @media (min-width:750px){
@@ -352,3 +356,4 @@ transition: 0.4s;
 
 
 }
+/* fin (min-width:750px) */
