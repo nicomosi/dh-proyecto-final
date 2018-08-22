@@ -1,5 +1,5 @@
 /*Media Query Celular -MOBILE FIRST-*/
-body{/*ASÍ NOS MOSTRO FRAN PARA BAJAR EL FOOTER SIEMPRE - LA MEJOR MANERA!*/
+body{/*ASÍ NOS MOSTRO FRAN EN EL COLEARNING PARA BAJAR EL FOOTER SIEMPRE */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
