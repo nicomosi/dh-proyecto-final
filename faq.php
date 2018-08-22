@@ -1,8 +1,6 @@
 <?php require_once('_head.php'); ?>
-<title>FAQ | Objective Food</title>
+    <title>FAQ | Objective Food</title>
   </head>
-
-
 
 <?php
 //convoca al header
