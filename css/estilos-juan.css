@@ -5,6 +5,8 @@ body{/*ASÍ NOS MOSTRO FRAN PARA BAJAR EL FOOTER SIEMPRE - LA MEJOR MANERA!*/
   justify-content: space-between;
   min-height: 100vh;
 }
+
+/*Empizan Estilos del Footer*/
 footer{
   width: 100%;
   position: relative;
@@ -51,15 +53,40 @@ footer>section>article>ul{
 .footer-redes>ul>li>a>img{
   width: 15px;
 }
+/*Terminan Estilos del Footer*/
 
+/*Empizan Estilos del FAQ*/
+.faq>h1{
+  padding-top: 10px;
+  text-align: center;
+}
+.faq>section>article{
+  padding: 15px;
+}
+.faq>section>article>h3{
+  text-align: center;
+}
+.faq>section:nth-child(odd){
+  background-color: #52515117;
+}
+/*Terminan Estilos del FAQ*/
 
 /*Media Query Ipad's*/
-@media (min-width:480px){
-
+@media (min-width:760px){
+  .faq>section>article>p{
+    max-width: 85vw;
+  }
+  .faq>section>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*Media Query Desktop's*/
 @media (min-width:1025px){
+  /*Empizan Estilos del Footer*/
   footer>section{
     display: flex;
     flex-direction: row;
@@ -86,32 +113,14 @@ footer>section>article>ul{
   .footer-redes>ul>li>a>img{
   width: 25px;
   }
-
-}
-/*SACAR ESTO DE ABAJO*/
-@media (min-width:750px){
-  
-
-  .faq{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1400px;
-    align-content: center;
-    margin: 0 auto;
+  /*Terminan Estilos del Footer*/
+  /*Empizan Estilos del FAQ*/
+  .faq>section>article>p{
+    width: 65vw;
   }
-  .faq>article{
-    margin: 20px;
+  .faq>section>article{
+    padding: 25px 0;
   }
-  .faq>article>section{
-    display: flex;
-  }
-  .faq>h1{
-    font-size: 1.6em;
-    margin: 15px;
-    text-decoration: underline;
-  }
-  .faq>article>h1{
-    font-size: 1.2em;
-  }
-
+  .faq>section>
+  /*Terminan Estilos del FAQ*/
 }
