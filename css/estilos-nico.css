@@ -38,7 +38,7 @@ main{
   justify-content: center;
 }
 .contenedor-principal p{
-  color: rgb(94, 94, 94)
+  color: rgb(94, 94, 94);
   line-height: 1.5em;
 }
 .contenedor-principal .estas-buscando{

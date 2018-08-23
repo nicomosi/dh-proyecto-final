@@ -11,4 +11,4 @@
     <link rel="stylesheet" href="css/estilos-nico.css">
     <link rel="stylesheet" href="css/estilos-francis.css">
     <link rel="stylesheet" href="css/estilos-juan.css">
-    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="30x30">
