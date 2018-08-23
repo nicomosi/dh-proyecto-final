@@ -9,9 +9,13 @@ require_once('_header.php');
   <section class="back-blur">
         <article class="login container">
             <h3>Ingresar</h3>
+            <p>Continuar con:</p>
             <div class="login-extern">
+            
               <a href=""><img src="img/fb-icon.png" alt="Facebook"></a>
+              
               <a href=""><img src="img/go-icon.png" alt="Google"></a>
+              
             </div>
 
             <form class="" action="">
@@ -21,8 +25,8 @@ require_once('_header.php');
                 <a href="#">Olvidé mi Contraseña</a>
                 <input class="form-input form-row" type="password" id="password" placeholder="" required>
                 <input type="checkbox" name="connect">
-                <label for="connect">Mantenerme conectado</label>
-                <button class="form-row form-button" type="submit" id="send-login">Enviar</button>
+                <label for="connect">Recordarme</label>
+                <button class="form-row form-button" type="submit" id="send-login">Ingresar</button>
             </form>
         </article>
         <!-- fin article class="login container"  -->

@@ -7,7 +7,7 @@
         <li><a href="">¿Quienes Somos?</a></li>
         <li><a href="">Productos</a></li>
         <li><a href="faq.php">Ayuda</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
       <ul class="nav-secundario"><!--El nav secundario es el de los botones de ingreso y registro -->
         <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Ingresar</a></li>

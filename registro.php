@@ -9,6 +9,7 @@ require_once('_header.php');
         <section class="back-blur">
                 <article class="signin container">
                 <h3>Crea una cuenta</h3>
+                <p>Continuar con:</p>
                 <div class="login-extern">
                   <a href=""><img src="img/fb-icon.png" alt="Facebook"></a>
                   <a href=""><img src="img/go-icon.png" alt="Google"></a>

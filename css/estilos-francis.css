@@ -14,7 +14,7 @@
 .container h3{
   text-align: center;
   font-size: 1.5em;
-  margin: 0% auto 10%;
+  margin: 0% auto 5%;
 }
 
 .form-input {
@@ -68,11 +68,18 @@
   justify-content: space-evenly;
   margin: 0px 20% 5%;
 }
+
 .container label{
   /* color: #666; */
-  font-weight: 700;
+  font-weight: 500;
 }
 
+.container p{
+  font-size: 0.8em;
+  color: #A9B1B7;
+  text-align: center;
+  margin-bottom: 5%;
+}
 
 /*
 
@@ -80,15 +87,14 @@
 
 */
 .login{
-  float: left;
+  float: right;
   margin: 3% 5%;
   width: 400px;
 }
 
 .login-back{
-  background-image: url(../img/registro2.jpeg);
+  background-image: url(../img/registro.jpg);
   background-size: cover;
-  background-position: center;
   display: flex;
 
 }
@@ -106,7 +112,7 @@
   margin: 0 auto;
 }
 .signin-back{
-  background-image: url(../img/registro2.jpeg);
+  background-image: url(../img/registro1.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -140,8 +146,49 @@
 .politics input{
   margin-right: 0.8em;
 }
+/*
 
-/* RESPONSIVE */
+//////////// STYLE DE CONTACTO //////////
+
+*/
+.contact{
+
+}
+.contact-header{
+  background-image: url(../img/registro3.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+}
+.contact-header h3{
+  margin: 3%;
+  color: white;
+}
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 3%;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .form-input{
+  margin: 0.7em;
+}
+textarea#mensaje {
+  font-family: inherit;
+}
+
+/*
+
+//////////// RESPONSIVE //////////
+
+*/
 @media (max-width: 620px){
   .login{
       float: none;
@@ -158,9 +205,16 @@
   }
 
 }
-@media (max-width: 620px){
-.login{
-  float: none;
-  width: auto;
+@media (max-width: 750px){
+  .contact-container{
+    display: block;
+    
 }
+
+  .contact-info{
+    text-align: center;
+    margin: 20px;
+  }
 }
+
+
