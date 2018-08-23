@@ -1,5 +1,5 @@
 <?php require_once('_head.php'); ?>
-<title>Login</title>
+<title>Log-in | Objective Food</title>
   </head>
 <?php
 //convoca al header
@@ -11,11 +11,11 @@ require_once('_header.php');
             <h3>Ingresar</h3>
             <p>Continuar con:</p>
             <div class="login-extern">
-            
+
               <a href=""><img src="img/fb-icon.png" alt="Facebook"></a>
-              
+
               <a href=""><img src="img/go-icon.png" alt="Google"></a>
-              
+
             </div>
 
             <form class="" action="">

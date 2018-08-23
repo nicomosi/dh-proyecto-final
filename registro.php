@@ -1,5 +1,5 @@
 <?php require_once('_head.php'); ?>
-<title>Registro</title>
+<title>Registro | Objective Food</title>
   </head>
 <?php
 //convoca al header
