@@ -42,7 +42,7 @@
   cursor: pointer;
   height: calc(2.25rem + 2px);
   font-size: 1em;
-  width: 280px;
+  max-width: 280px;
 }
 .form-button:hover{
   transform: scale(1.1);
@@ -156,13 +156,15 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 50vh;
 }
-.contact-header h3{
-  margin: 3%;
+.contact-header h2{
+  /* margin: 3%; */
   color: white;
+  color: white;
+  position: absolute;
+  top: 50vh;
+  left: 5%;
 }
 .contact-container{
   display: flex;
@@ -181,6 +183,15 @@ textarea#mensaje {
   font-family: inherit;
 }
 
+.info{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.info i{
+  margin-right: 1em;
+}
 /*
 
 //////////// RESPONSIVE //////////

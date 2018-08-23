@@ -9,11 +9,11 @@ require_once('_header.php');
 <body>
     <main>
 
-
             <section class="contact-header">
-
-                <h3>Contanos tu experiencia</h3>
-
+                <div class="back-blur">
+                
+                </div>
+                <h2>Contanos tu experiencia</h2>
             </section>
             <section class="contact-container">
                 <article >
@@ -25,7 +25,7 @@ require_once('_header.php');
 
                             <input type="number" id="telefono" class="form-input" placeholder="Numero de contacto">
 
-                            <input type="text" id="motivo" class="form-input" placeholder="Motivo de la consulta">
+                            <input type="text" id="motivo" class="form-input" placeholder="Motivo de la consulta" require>
 
 
                             <textarea rows="4" cols="50" id="mensaje" class="form-input" placeholder="Mensaje"></textarea>
@@ -35,7 +35,18 @@ require_once('_header.php');
                     </form>
                 </article>
                 <article class="contact-info">
-                    <p>contacto@##.com</p>
+                    <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p>contacto@objetctivefood.com</p>
+                    </div>
+                    <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Monroe 860, Belgrano</p>
+                    </div>
+                    <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p>+54 911 3934 2713</p>
+                    </div>
                 </article>
             </section>
 
