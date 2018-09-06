@@ -67,7 +67,9 @@
   justify-content: space-evenly;
   margin: 0px 20% 5%;
 }
-
+.login-extern img{
+  height: 40px;
+}
 .container label{
   /* color: #666; */
   font-weight: 500;
@@ -130,20 +132,49 @@
 }
 .signin-group-form{
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   width: 48%;
 }
+form .error-container{
+background-color: rgba(255, 160, 96, 0.534);
+border: 2px solid rgba(255, 136, 56, 0.822);
+border-radius: 5px;
+box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.8);
+display: flex;
+margin: 0 auto;
+margin-bottom: 2.2vh;
+justify-content: center;
+padding: 8px;
+}
+form .error-container {
+  color: rgb(75, 75, 75);
+  font-size: 0.9em;
+}
 
+form .error-container i{
+  margin-right: 4px;
+  color: rgb(255, 116, 36);
+}
 .politics {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.politics .tyc{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 }
 .politics label{
   font-size: 0.8em;
+  display: flex;
+  align-items: center;
 }
-
+.politics label a{
+  margin-left: 4px;
+}
 .politics input{
-  margin-right: 0.8em;
+  margin-right: 0.2em;
 }
 /*
 
