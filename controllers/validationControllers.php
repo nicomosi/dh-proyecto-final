@@ -29,6 +29,9 @@ $errores=[];
             $errores['emptyPassword']='Debes ingresar una contraseña para poder registrarte!';
         }elseif (strlen($_POST['password'])<8) {
             $errores['passwordLength']='La contraseña debe tener un minimo de 8 caracteres!';
+        }elseif ($_POST['password'] === strtolower($_POST['password'])) {// si son iguales es porque no hay mayuscula y muestra error
+            $errores['passwordlower']='La contraseña debe tener una letra mayuscula!';
+            
         }
     }
 

@@ -1,0 +1,1 @@
+{"nombre":"Francis","apellido":"Guzman","email":"fguzman@venehsoft.com","password":"$2y$10$lqlA8V0NZYK\/NmcswBxjvOB0cGcwhTJGQo4iU8TpJYLLJLiyRWqJy"}

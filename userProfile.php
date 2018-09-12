@@ -1,14 +1,21 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<?php require_once('_head.php'); 
+require_once('controllers/filesControllers.php');
+?>
+<?php
+if (!status()) { 
+  header('location: index.php');
+    exit();
+}
+?>
+<title>Log-in | Objective Food</title>
+  </head>
+<?php
+//convoca al header
+require_once('_header.php');
+?>
 <body>
     <h1>BIENVENIDO!</h1>
 </body>
-</html>
+<?php
+//convoca al footer
+require_once('_footer.php');

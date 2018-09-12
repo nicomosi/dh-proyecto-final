@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once('controllers/sessionControllers.php'); 
+
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>

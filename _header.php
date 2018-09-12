@@ -1,3 +1,7 @@
+<?php
+require_once('controllers/sessionControllers.php'); 
+
+?> 
 <header>
   <section class="header-top">
     <article class="contenedor-logo-header">LOGO</article>
@@ -10,8 +14,13 @@
         <li><a href="contacto.php">Contacto</a></li>
       </ul>
       <ul class="nav-secundario"><!--El nav secundario es el de los botones de ingreso y registro -->
+      <?php if (!status()) { ?>
         <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Ingresar</a></li>
         <li><a href="registro.php"><i class="fas fa-user-plus"></i>Registrarme</a></li>
+      <?php } else { ?>
+        <li><a href="userProfile.php"><i class="fas fa-user-plus"></i>Perfil</a></li>
+        <li><a href="logout.php"><i class="fas fa-user-plus"></i>Logout</a></li>
+      <?php } ?>
       </ul>
     </nav>
     <article class="contenedor-btn-header">
