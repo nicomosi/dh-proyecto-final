@@ -21,7 +21,7 @@ require_once('controllers/loginControllers.php');
 
             <form class="" action="" method="post">
                 <label for="account">Cuenta:</label>
-                <input class="form-input form-row" type="text" id="account"  name="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>">
+                <input class="form-input form-row" type="text" id="account"  name="email" value="<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : ''; ?>">
                   <?php if (isset($errores["email"])) { ?><span class="error-container">
                       <i class="fas fa-exclamation-circle"></i>
                       <?php echo $errores["email"]; ?>
@@ -35,7 +35,7 @@ require_once('controllers/loginControllers.php');
                     <?php echo $errores["password"]; ?>
                 </span>
                 <?php } ?>
-                <input type="checkbox" name="remember" >
+                <input type="checkbox" name="remember" <?= (isset($_POST['remember'])) ? 'checked' : ""; ?> > 
                 <label for="remember">Recordarme</label>
                 <button class="form-row form-button" type="submit" id="send-login" name="submit">Ingresar</button>
             </form>

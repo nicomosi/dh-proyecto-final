@@ -49,7 +49,7 @@ $error = [];
            $error['password'] = loginError('password');
         }
             
-        elseif (searchPassword($password) !== $password){                 
+        elseif (searchPassword($password) === false){                 
             $error['password'] = loginError('password-invalidates');
         }
         

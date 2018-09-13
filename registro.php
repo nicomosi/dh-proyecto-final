@@ -66,7 +66,7 @@ require_once('controllers/helpers.php');
                                 </div>
                                 <div class="politics">
                                         <div class="tyc">
-                                                <input type="checkbox" id="politics" name="tyc">
+                                                <input type="checkbox" id="politics" name="tyc" value="" <?= (isset($_POST['tyc'])) ? 'checked' : ""; ?> >
                                                 <label for="politics">Estoy de acuerdo con los <a href="">términos y condiciones.</a></label>
                                         </div>
                                   <!--En esta parte hay php embebido, si existe el error del input, aparece un span conteniendo el error respectivo.  -->   

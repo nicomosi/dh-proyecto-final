@@ -14,9 +14,10 @@ if ($_POST) {
     $errores=validarErrores();
     $usuarioViejo=traerUsuario($_POST['email']);
     if ($usuarioViejo===null) {
-            $usuarioNuevo=crearUsuario($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['password']);
+            
     //+ Una vez creado el usuario nuevo, verifico si no hay errores y si checkeo el terminos y condiciones.
             if (count($errores)===0 && isset($_POST['tyc'])) {
+                $usuarioNuevo=crearUsuario($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['password']);
     //+ si no existen errores, hasheo la contraseña y la guardo.
                      $hashedPassword=password_hash($_POST['password'], PASSWORD_DEFAULT);
                      $usuarioNuevo['password']=$hashedPassword;
@@ -34,9 +35,9 @@ if ($_POST) {
 
 function crearUsuario($nombre, $apellido, $email, $password){
     $usuario=[
-    'nombre'=>$nombre,    
-    'apellido'=>$apellido,
-    'email'=>$email,
+    'nombre'=>ucwords(strtolower($nombre)),  //Guarda con mayuscula el primer caracter y el resto en minuscula
+    'apellido'=>ucwords(strtolower($apellido)), 
+    'email'=>strtolower($email),  //guarda el email en mayuscula
     'password' => $password
     ];
     return $usuario;

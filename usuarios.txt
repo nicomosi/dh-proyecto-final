@@ -1,1 +1,3 @@
 {"nombre":"Francis","apellido":"Guzman","email":"fguzman@venehsoft.com","password":"$2y$10$lqlA8V0NZYK\/NmcswBxjvOB0cGcwhTJGQo4iU8TpJYLLJLiyRWqJy"}
+{"nombre":"Nombre","apellido":"Apellido","email":"email@algo.com","password":"$2y$10$N3Z4j7Jj9h0IC.gz6adc9OlgP5GDcwae\/ms1w8GZotck05OmlCCk6"}
+{"nombre":"Vane","apellido":"Mata","email":"vane@algo.com","password":"$2y$10$x3MoBH8BSSYoKmjElrrGN.JOqFhbtjqIIylZ4tHY4GX9APSj.SVlO"}

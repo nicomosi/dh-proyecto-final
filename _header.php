@@ -1,4 +1,5 @@
 <?php
+require_once('controllers/filesControllers.php');
 require_once('controllers/sessionControllers.php'); 
 
 ?> 
@@ -14,12 +15,12 @@ require_once('controllers/sessionControllers.php');
         <li><a href="contacto.php">Contacto</a></li>
       </ul>
       <ul class="nav-secundario"><!--El nav secundario es el de los botones de ingreso y registro -->
-      <?php if (!status()) { ?>
+      <?php if (!status()) { //hace referencia a si esta conectado o no?> 
         <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Ingresar</a></li>
         <li><a href="registro.php"><i class="fas fa-user-plus"></i>Registrarme</a></li>
       <?php } else { ?>
-        <li><a href="userProfile.php"><i class="fas fa-user-plus"></i>Perfil</a></li>
-        <li><a href="logout.php"><i class="fas fa-user-plus"></i>Logout</a></li>
+        <li><a href="userProfile.php"><i class="fas fa-user-cog"></i><?= status() ? (userName($_SESSION['usuario'])) : ""; ?></a></li>
+        <li><a href="logout.php"><i class="fas fa-user-times"></i>Salir</a></li>
       <?php } ?>
       </ul>
     </nav>

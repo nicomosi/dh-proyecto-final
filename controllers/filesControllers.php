@@ -74,15 +74,15 @@ function searchPassword($password){
         while (($linea = fgets($archivo)) !== false) {
             $passwordDecod = json_decode($linea, true);
                 
-                if (password_verify($password, $passwordDecod['password'])) {  //Si la verificacion es true, devuelve el valor introducido. Luego este valor se compara con el mismo en la funcion de validationLogin como indicativo de que son iguales.
-                    return $password;
-                    break;
-                }                 
+            if (password_verify($password, $passwordDecod['password'])) {  //Si la verificacion es true, devuelve el valor introducido. Luego este valor se compara con el mismo en la funcion de validationLogin como indicativo de que son iguales.
+                return true;
+                break;
+            }                 
             
         }
         fclose($archivo);
         
-    
+        return false;
        
 }
 
@@ -96,5 +96,30 @@ function loginUser($email, $password, $remember){
     return $usuario;
 }
 
+//Esta funcion es usada para mostrar el nombre de la persona que inició sesion 
+function userName($usuario){
+    
+    $usuarioDecod = [];
+    
+    if (isset($archivo)) {
+        $archivo = fopen("usuarios.txt", "r");
+    } else {
+        $archivo = fopen("usuarios.txt", "r");
+    }
+
+        
+        while (($linea = fgets($archivo)) !== false) {
+            $usuarioDecod = json_decode($linea, true);
+            
+            if ($usuario['email'] === $usuarioDecod['email']) { 
+                return $usuarioDecod['nombre'];
+                break;
+            }
+            
+        }
+        fclose($archivo);
+     
+        
+}
 
 ?>
