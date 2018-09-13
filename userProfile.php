@@ -3,7 +3,7 @@ require_once('controllers/filesControllers.php');
 ?>
 <?php
 if (!status()) { 
-  header('location: index.php');
+  header('location: login.php');
     exit();
 }
 ?>
