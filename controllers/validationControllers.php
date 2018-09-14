@@ -42,4 +42,23 @@ $errores=[];
     return $errores;
 }
 
+function validarFoto ($foto)
+    {
+        if ($foto["error"] !== UPLOAD_ERR_OK) {
+            return false; 
+        }
+        return true;
+    }
+
+function validarfotoPerfil($usuario)
+    {
+        $filesErrores = [];
+
+        // Validamos la foto que recibimos, nos fijamos que se haya subido bien.
+        if (!validarFoto($_FILES['fotoPerfil'])) {
+            $filesErrores['fotoPerfil'] = 'Hubo un error al subir la foto.';
+        }
+        return $filesErrores;
+    }
+
 ?>

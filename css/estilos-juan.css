@@ -71,6 +71,46 @@ footer>section>article>ul{
 }
 /*Terminan Estilos del FAQ*/
 
+/*Empizan Estilos de perfil.php*/
+
+.nav-perfil{
+  background-color: #d4d4d4;
+  height: 400px;
+  display: flex;
+
+  align-items: center;
+}
+
+.nav-perfil ul{
+  list-style: none;
+  width: 100%;
+}
+
+.nav-perfil ul li{
+  height: 50px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-perfil ul a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width:100%;
+}
+
+.profile-content{
+  margin: 30px;
+}
+
+.profile-content article img{
+  border-radius: 50%;
+}
+
+/*Terminan Estilos de perfil.php*/
+
 /*Media Query Ipad's*/
 @media (min-width:760px){
   .faq>section>article>p{
@@ -82,6 +122,26 @@ footer>section>article>ul{
     justify-content: center;
     align-items: center;
   }
+  /*Empizan Estilos de perfil.php*/
+  .profile{
+    display: flex;
+  }
+
+  .nav-perfil{
+    height: 80vh;
+    width: 200px;
+    display: inline;
+
+  }
+
+  .nav-perfil ul{
+    margin-top: 90px;
+  }
+
+  .profile-content{
+    margin: 100px;
+  }
+  /*Terminan Estilos de perfil.php*/
 }
 
 /*Media Query Desktop's*/
