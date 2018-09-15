@@ -33,12 +33,13 @@ if ($_POST) {
     }
 }
 
-function crearUsuario($nombre, $apellido, $email, $password){
+function crearUsuario($nombre, $apellido, $email, $password, $fotoPerfil="img/profile.svg"){
     $usuario=[
     'nombre'=>ucwords(strtolower($nombre)),  //Guarda con mayuscula el primer caracter y el resto en minuscula
     'apellido'=>ucwords(strtolower($apellido)), 
     'email'=>strtolower($email),  //guarda el email en mayuscula
-    'password' => $password
+    'password' => $password,
+    'fotoperfil'=>$fotoPerfil
     ];
     return $usuario;
 } 

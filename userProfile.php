@@ -1,21 +1,22 @@
 <?php require_once('_head.php'); 
+require_once('controllers/validationControllers.php');
 require_once('controllers/filesControllers.php');
 require_once('controllers/helpers.php');
+require_once('controllers/profileImageControllers.php');
 ?>
 <?php
-if (!status()) { 
-  header('location: login.php');
-    exit();
-}
-
+// if (!status()) { 
+//   header('location: login.php');
+//     exit();
+// }
+var_dump(user());
 //GUARDAR FOTO EN USER
 if ($_FILES){
-  $filesErrores = validarFotoPerfil();
-  $fotoPerfil = $_FILES['fotoPerfil'];
+  
+  $filesErrores = validarFotoPerfil($_SESSION['usuario']);
+  modificarFotoUsuario($_SESSION['usuario']['email']);
+  var_dump($_FILES);
 }
-
-
-
 
 
 ?>
@@ -38,13 +39,12 @@ require_once('_header.php');
       </nav>
       <section class="profile-content">
         <article>
-          <h3>Juan Spada</h3>
           <!-- <h3><?= user()['nombre'];?></h3> -->
           <p><?= user()['email'];?></p>
-          <img src="img/profile.svg" alt="Foto de Perfil">
-          <form action="" method="post">
+          <img src="<?= user()['fotoperfil']?>" alt="">
+          <form action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>
-            <input type="file">
+            <input type="file" name="subirFotoPerfil">
             <button type="submit">Subir</button>
           </form>
         </article>

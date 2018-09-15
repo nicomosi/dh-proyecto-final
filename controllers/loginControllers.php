@@ -14,7 +14,8 @@ if ($_POST) {
 // si no hay errores, se guarda el usuario en un array
     if (!$errores) 
     {
-        $usuarioLogin = loginUser($_POST['email'], $_POST['password'], $_POST['remember']);
+
+        $usuarioLogin = traerUsuario($_POST['email']);
 
         //funcion que se encarga de iniciar sesion y de mantenerla abierta si el usuario tildo la opcion de recordar, para ello, se le pasa el array que devuelve la funcion loginUser
         rememberSession($usuarioLogin);

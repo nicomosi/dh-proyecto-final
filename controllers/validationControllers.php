@@ -55,7 +55,7 @@ function validarfotoPerfil($usuario)
         $filesErrores = [];
 
         // Validamos la foto que recibimos, nos fijamos que se haya subido bien.
-        if (!validarFoto($_FILES['fotoPerfil'])) {
+        if (!validarFoto($_FILES['subirFotoPerfil'])) {
             $filesErrores['fotoPerfil'] = 'Hubo un error al subir la foto.';
         }
         return $filesErrores;
