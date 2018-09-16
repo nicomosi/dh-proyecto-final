@@ -20,8 +20,8 @@ if ($_POST) {
         //funcion que se encarga de iniciar sesion y de mantenerla abierta si el usuario tildo la opcion de recordar, para ello, se le pasa el array que devuelve la funcion loginUser
         rememberSession($usuarioLogin);
         
-        //por ultimo, la pagina del login, redirecciona a la principal
-        header('Location: index.php'); 
+        //por ultimo, la pagina del login, redirecciona al perfil
+        header('Location: userProfile.php'); 
         exit();
         
     }
