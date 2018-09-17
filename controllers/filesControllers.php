@@ -57,7 +57,7 @@ function searchUser($email){
         
 }
 //Verifica contraseña en el archivo json. Esta funcion es usada en el login para verificar si el password introducido coincide con el guardado en el registro 
-function searchPassword($password){
+function searchPassword($password, $email){
     
     $passwordDecod = [];
     
@@ -69,11 +69,13 @@ function searchPassword($password){
         
         while (($linea = fgets($archivo)) !== false) {
             $passwordDecod = json_decode($linea, true);
+            if ($passwordDecod['email']===$email) {
                 
-            if (password_verify($password, $passwordDecod['password'])) {  //Si la verificacion es true, devuelve el valor introducido. Luego este valor se compara con el mismo en la funcion de validationLogin como indicativo de que son iguales.
-                return true;
-                break;
-            }                 
+                if (password_verify($password, $passwordDecod['password'])) {  //devuelve true si la verificacion lo es
+                    return true;
+                    break;
+                }  
+            }               
             
         }
         fclose($archivo);
@@ -118,7 +120,27 @@ function userName($usuario){
         
 }
 
+function modificarJson($email,$recover){  
+    $recurso=fopen('usuarios.json', 'r');
 
+    $usuarios=file_get_contents('usuarios.json');
+    $usuarios = explode(PHP_EOL, $usuarios);
+    array_pop($usuarios);
+
+    foreach ($usuarios as $llave => $valor) {
+        $usuarioJson=json_decode($valor, true);
+        if ($usuarioJson['email']===$email) {
+        
+         $nuevoPassword = $recover;
+         $usuarioJson["password"] = $nuevoPassword;
+         $usuarios[$llave] = json_encode($usuarioJson);
+         $_SESSION["usuario"]["password"] = $nuevoPassword;
+        }
+    }
+    file_put_contents('usuarios.json', implode(PHP_EOL, $usuarios) . PHP_EOL);
+    
+    
+}
 
 
 

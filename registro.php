@@ -7,6 +7,13 @@ require_once('controllers/registerControllers.php');
 require_once('controllers/validationControllers.php');
 require_once('controllers/filesControllers.php');
 require_once('controllers/helpers.php');
+
+//si hay sesion iniciada, e intentar acceder a la pagina de registro, este redirecciona al perfil del usuario
+if (status()) { 
+        header('location: userProfile.php');
+          exit();
+      }
+
 ?>
 
 <?php require_once('_header.php'); ?>

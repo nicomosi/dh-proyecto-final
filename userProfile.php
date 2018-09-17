@@ -5,17 +5,18 @@ require_once('controllers/helpers.php');
 require_once('controllers/profileImageControllers.php');
 ?>
 <?php
-// if (!status()) { 
-//   header('location: login.php');
-//     exit();
-// }
-var_dump(user());
+//si no hay sesion iniciada, e intentar acceder al perfil, este redirecciona al login
+if (!status()) { 
+  header('location: login.php');
+    exit();
+}
+// var_dump(user());
 //GUARDAR FOTO EN USER
 if ($_FILES){
   
   $filesErrores = validarFotoPerfil($_SESSION['usuario']);
   modificarFotoUsuario($_SESSION['usuario']['email']);
-  var_dump($_FILES);
+  //var_dump($_FILES);
 }
 
 
@@ -39,8 +40,9 @@ require_once('_header.php');
       </nav>
       <section class="profile-content">
         <article>
-          <!-- <h3><?= user()['nombre'];?></h3> -->
-          <p><?= user()['email'];?></p>
+          <h3>Hola <?= user()['nombre'];?></h3>
+          <p>Nombre: <?= user()['nombre'];?> <?= user()['apellido'];?></p>
+          <p>Email: <?= user()['email'];?></p>
           <img src="<?= user()['fotoperfil']?>" alt="">
           <form action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>
