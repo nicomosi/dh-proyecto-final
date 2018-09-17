@@ -10,13 +10,11 @@ if (!status()) {
   header('location: login.php');
     exit();
 }
-// var_dump(user());
 //GUARDAR FOTO EN USER
 if ($_FILES){
   
   $filesErrores = validarFotoPerfil($_SESSION['usuario']);
   modificarFotoUsuario($_SESSION['usuario']['email']);
-  //var_dump($_FILES);
 }
 
 
@@ -41,14 +39,26 @@ require_once('_header.php');
       <section class="profile-content">
         <article>
           <h3>Hola <?= user()['nombre'];?></h3>
-          <p>Nombre: <?= user()['nombre'];?> <?= user()['apellido'];?></p>
-          <p>Email: <?= user()['email'];?></p>
           <img src="<?= user()['fotoperfil']?>" alt="">
           <form action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>
             <input type="file" name="subirFotoPerfil">
             <button type="submit">Subir</button>
           </form>
+        </article>
+
+        <article>
+          <form action="post">
+            <label for="nombre">Nombre:</label>
+            <input name ="nombre" type="text" value="<?= user()['nombre'];?>">
+            <label for="apellido">Apellido:</label>
+            <input name="apellido" type="text" value="<?= user()['apellido'];?>">
+            <label for="email">Email:</label>
+            <input name="email" type="email" value="<?= user()['email'];?>">
+            <button type ="submit" name="submit">Actualizar</button>
+          </form>
+        </article>
+
         </article>
       </section>
     </section>
