@@ -76,6 +76,18 @@ transition: 0.4s;
   .header-top nav{
     display: none;
   }
+
+    .header-top button {
+    width:50px;
+    height: 40px;
+    background-color: #f2fff500;
+    border: none;
+  }
+
+   .header-top button i {
+   font-size: 2em;
+   color: rgba(68, 68, 68, 0.87);
+  }
   .header-top .contenedor-btn-header{
     align-items: center;
     color: #f2fff5;
@@ -89,7 +101,31 @@ transition: 0.4s;
   .banner{
     margin: 5%;
   }
+#side-navbar{
+    
+    background-color: rgba(184, 182, 182, 0.274);
+    background-color: rgba(0, 0, 0, 0.808);
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 12px 6px rgba(128, 128, 128, 0.479);
+  }
+  #side-navbar ul{
+    list-style: none;
+    margin: 4vh 0;
 
+  }
+  #side-navbar ul li {
+    text-align: center;
+    margin: 3vh 0;
+    
+
+  }
+  #side-navbar ul li a{
+    text-decoration: none;
+    color:rgba(246, 175, 44, 1) ;
+    color: white;
+    font-size: 1.2em;
+  }
 
 /* Estilos MAIN celular */
 
@@ -230,6 +266,9 @@ transition: 0.4s;
     font-size: 0.9em;
   }
   .contenedor-btn-header{
+    display: none;
+  }
+  #side-navbar{
     display: none;
   }
   .banner{
