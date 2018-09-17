@@ -40,8 +40,9 @@ require_once('_header.php');
       </nav>
       <section class="profile-content">
         <article>
-          <!-- <h3><?= user()['nombre'];?></h3> -->
-          <p><?= status() ? (userName($_SESSION['usuario'])) : ""; ?></p>
+          <h3>Hola <?= user()['nombre'];?></h3>
+          <p>Nombre: <?= user()['nombre'];?> <?= user()['apellido'];?></p>
+          <p>Email: <?= user()['email'];?></p>
           <img src="<?= user()['fotoperfil']?>" alt="">
           <form action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>

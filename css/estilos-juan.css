@@ -4,6 +4,7 @@ body{/*ASÍ NOS MOSTRO FRAN EN EL COLEARNING PARA BAJAR EL FOOTER SIEMPRE */
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  min-width: 350px;
 }
 
 /*Empizan Estilos del Footer*/
@@ -81,6 +82,7 @@ footer>section>article>ul{
   align-items: center;
 }
 
+
 .nav-perfil ul{
   list-style: none;
   width: 100%;
@@ -106,7 +108,8 @@ footer>section>article>ul{
 }
 
 .profile-content article img{
-  border-radius: 50%;
+  max-width:40px;
+  height:auto;
 }
 
 /*Terminan Estilos de perfil.php*/
@@ -128,10 +131,9 @@ footer>section>article>ul{
   }
 
   .nav-perfil{
-    height: 80vh;
-    width: 200px;
     display: inline;
-
+    height: 80vh;
+    width: 150px;
   }
 
   .nav-perfil ul{
