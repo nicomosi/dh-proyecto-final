@@ -129,6 +129,9 @@ footer>section>article>ul{
   .profile{
     display: flex;
   }
+  #side-navbar{
+    display: none;
+  }
 
   .nav-perfil{
     display: inline;
@@ -158,6 +161,9 @@ footer>section>article>ul{
   footer>section>article>p{
     font-size: 1em;
     margin: 6px 0;
+  }
+  #side-navbar{
+    display: none;
   }
   .nav-footer{
     display: inline;

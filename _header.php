@@ -48,8 +48,13 @@ require_once('controllers/sessionControllers.php');
         <li><a href="">Productos</a></li>
         <li><a href="faq.php">Ayuda</a></li>
         <li><a href="contacto.php">Contacto</a></li>
+<?php if (!status()) { //hace referencia a si esta conectado o no?> 
         <li><a href="login.php"><i class="fas fa-sign-in-alt"></i>Ingresar</a></li>
         <li><a href="registro.php"><i class="fas fa-user-plus"></i>Registrarme</a></li>
+      <?php } else { ?>
+        <li><a href="userProfile.php"><i class="fas fa-user-cog"></i><?= status() ? (userName($_SESSION['usuario'])) : ""; ?></a></li>
+        <li><a href="logout.php"><i class="fas fa-user-times"></i>Salir</a></li>
+      <?php } ?>
       </ul>
   </section>
 </header>

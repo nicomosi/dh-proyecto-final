@@ -30,14 +30,14 @@ require_once('_header.php');
 <body>
 
     <section class="profile">
-      <nav class="nav-perfil">
+      <!-- <nav class="nav-perfil">
         <ul>
           <a href=""><li>Cuenta</li></a>
           <a href=""><li>Informes</li></a>
           <a href=""><li>Ventas</li></a>
           <a href=""><li>Configuración</li></a>
         </ul>
-      </nav>
+      </nav> -->
       <section class="profile-content">
         <article>
           <h3>Hola <?= user()['nombre'];?></h3>
@@ -47,7 +47,7 @@ require_once('_header.php');
           <form action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>
             <input type="file" name="subirFotoPerfil">
-            <button type="submit">Subir</button>
+            <button type="subit">Subir</button>
           </form>
         </article>
       </section>
