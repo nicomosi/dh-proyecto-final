@@ -27,7 +27,7 @@ require_once('_header.php');
 ?>
 <body>
 
-    <section class="profile">
+    <section class="contact-container">
       <!-- <nav class="nav-perfil">
         <ul>
           <a href=""><li>Cuenta</li></a>
@@ -36,30 +36,30 @@ require_once('_header.php');
           <a href=""><li>Configuración</li></a>
         </ul>
       </nav> -->
-      <section class="profile-content">
+      <section class="file">
         <article>
           <h3>Hola <?= user()['nombre'];?></h3>
           <img src="<?= user()['fotoperfil']?>" alt="">
-          <form action="" method="post" enctype="multipart/form-data">
+          <form class="file-form"action="" method="post" enctype="multipart/form-data">
             <label for="file">Foto de Perfil</label>
             <input type="file" name="subirFotoPerfil">
             <button type="subit">Subir</button>
           </form>
         </article>
 
-        <article>
-          <form action="post">
+        <article class="">
+          <form class="contact-form" method="post">
             <label for="nombre">Nombre:</label>
-            <input name ="nombre" type="text" value="<?= user()['nombre'];?>">
+            <input  class="form-input" name ="nombre" type="text" value="<?= user()['nombre'];?>">
             <label for="apellido">Apellido:</label>
-            <input name="apellido" type="text" value="<?= user()['apellido'];?>">
+            <input  class="form-input" name="apellido" type="text" value="<?= user()['apellido'];?>">
             <label for="email">Email:</label>
-            <input name="email" type="email" value="<?= user()['email'];?>">
-            <button type ="submit" name="submit">Actualizar</button>
+            <input  class="form-input" name="email" type="email" value="<?= user()['email'];?>">
+            <!-- <button type ="submit" name="submit">Actualizar</button> -->
           </form>
         </article>
 
-        </article>
+       
       </section>
     </section>
 </body>

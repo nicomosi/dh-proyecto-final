@@ -106,6 +106,14 @@ footer>section>article>ul{
 .profile-content{
   margin: 30px;
 }
+.file-form {
+  margin: 1em 0;
+}
+.file img {
+  width: 100%;
+  margin-top: 0.5em;
+  border-radius: 10px;
+}
 
 .profile-content article img{
   max-width:100px;
