@@ -108,8 +108,20 @@ footer>section>article>ul{
 }
 
 .profile-content article img{
-  max-width:40px;
+  max-width:100px;
   height:auto;
+}
+
+.profile-content article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-content article form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Terminan Estilos de perfil.php*/
@@ -145,6 +157,14 @@ footer>section>article>ul{
 
   .profile-content{
     margin: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-content article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   /*Terminan Estilos de perfil.php*/
 }
